@@ -87,25 +87,81 @@
   <!-- Intro -->
 
 
-
   <!-- Hero -->
   <div class="d-flex justify-content-between p-5 text-white" style="background-color: rgb(37, 46, 57); flex-direction: column; align-items: left;">
     <h1 style="text-align: left; color: #1677e9">About Me</h1>
-    <img src="assets/img/me.png" alt="Your Image" class="mr-3 img-fluid rounded" style="margin: 0 auto; width: 300px; height: 300px; padding-top: 1rem; padding-bottom: 1rem;">
     <div>
-      <p class="fw-normal" style="font-family: FreeMono, monospace;">
+    <img src="assets/img/me.png" alt="Your Image" class="mr-3 img-fluid rounded container__image" style="padding-top: 1rem; padding-bottom: 2rem;">
+      <p class="fw-normal container__text" style="font-family: FreeMono, monospace; padding-top: 2rem; padding-bottom: 1rem; height: fit-content;">
         <span>joseph@josephmanni.com ~ # whoami <span id="myBlinkingDiv">_</span><br><br>
         Hi, I'm Joseph. I'm a Junior at The University of Michigan studying 
         Computer Science. I first encountered coding through my robotics club in
-        high school, and it quickly became something I loved to do. I have a passion for 
-        leadership, problem solving, teamwork, and collaboration. As an entrepreneur too,
-        I am driven to achieve and deliver excpetional work. My intersts include Machine Learning, 
-        Autonomous vehicles, and UAS (unmanned aircraft systems). Outside of school, you'll find me on the soccer
-      field, spending time with my family and friends, or working on a project I'll probably never finish!</p>
+        high school, and it quickly became something I loved to do. I have a passion for problem solving,
+        leadership, teamwork, and collaboration. As an entrepreneur too,
+        I am driven to achieve and deliver excpetional work. Outside of school, you'll find me on the soccer
+      field, spending time with my family and friends, or working on a project I'll probably never finish! My intersts include: Machine Learning, 
+      Autonomous Vehicles, Security, and UAS (unmanned aircraft systems). </p>
     </div>
-    <h1><a href="https://github.com/JosephManni" target="_blank"><button type="button" class="btn btn-outline-secondary"style="color: #1677e9">Check out what I've been working on!</button></a></h1>
+    <h1><a href="/pages/contact.html" target="_blank"><button type="button" class="btn btn-outline-secondary"style="color: #1677e9;">Get in touch!</button></a></h1>
   </div>
   <!-- Hero -->
+
+<!-- //add recent projects -->
+  <!-- Project -->
+  <div style="overflow: auto;" class="bg-dark main-content ">
+    <div class="d-flex justify-content-between p-5 text-white bg-dark" style="flex-direction: column; align-items: left;">
+      
+      <h1 style="text-align: left; color: #1677e9">Recent Projects</h1><br><br>
+      <div class="container">
+
+        <div class="card mx-4" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/img/logos/Hotspot_logo.png" alt="Hotspot_logo logo">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Hotspot</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">Personal Project<span style="color: red; padding-left: 1rem;">In progress...</span></h6>
+            <p class="card-text text-dark">Live, in-person games. Meet friends, create teams, and take on challenges! Built using Swift and GameKit.<br><br><br><br><br></p>
+            <a href="https://github.com/JosephManni/Hotspot_logo" class="btn btn-primary stretched-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card mx-4" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/img/umich.jpg" alt="umich logo">
+          <div class="card-body">
+            <h5 class="card-title text-dark">SillyQL</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">EECS 281 - University of Michigan</h6>
+            <p class="card-text text-dark">Created an RDBMS in C++ mimicking MySQL. Implemented using hash maps, nested data structures, and various hashing techniques for optimal performance.<br><br></p>
+            <a href="https://eecs281staff.github.io/p3-sillyql/" class="btn btn-primary stretched-link" target="_blank">SillyQL</a>
+          </div>
+        </div>
+    
+        <div class="card mx-4" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/img/umich.jpg" alt="umich logo">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Pokemon</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">EECS 281 - University of Michigan</h6>
+            <p class="card-text text-dark">Used Prim's algorithm to construct minimum spanning trees of coordinate points. Implemented Nearest Neighbor heuristic,
+          Two-Opt, and Branch & Bound algorithm to find optimal solution to Travelling Salesperson.</p>
+            <a href="https://eecs281staff.github.io/p4-pokemon/" class="btn btn-primary stretched-link" target="_blank">Pokemon</a>
+          </div>
+        </div>
+        
+        <div class="card mx-4" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/img/logos/ms_logo.png" alt="ms logo">
+          <div class="card-body">
+            <h5 class="card-title text-dark">MnemonicStudy</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">Personal Project</h6>
+            <p class="card-text text-dark">A webapp for creating and studying with mnemonic devices. Features include user accounts, mnemonic generation, and flash cards. Built in Java with the Spring Boot framework.<br><br><br></p>
+            <a href="https://github.com/JosephManni/MnemonicDeviceProject" class="btn btn-primary stretched-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Project -->
+
 
   <style>    
     /* Float four columns side by side */
@@ -114,8 +170,8 @@
       width: 25%;
       padding: 0 10px;
     }
-        /* Style the counter cards */
-      .card {
+        /* Style the counter tool-cards */
+      .tool-card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       padding: 16px;
       text-align: center;
@@ -128,11 +184,11 @@
   <div style="overflow: auto;" class="bg-dark main-content ">
   <div class="d-flex justify-content-between p-5 text-white bg-dark" style="flex-direction: column; align-items: left;">
     
-    <h1 style="color: #1677e9;">Technical Skills</h1><br><br>
-    <h4 style="color: #1677e9;">I've worked with:</h4><br><br>
+    <h1 style="color: #1677e9; text-align: left;">Technical Skills</h1><br><br>
+    <h4 style="color: #1677e9; text-align: left;">I've enjoy working with...</h4><br><br>
     <div class="container">
       <a style="text-decoration: none; color: inherit;" href="https://isocpp.org" target="_blank">
-      <div class="card">
+      <div class="tool-card">
           <div class="logo">
             <img src="assets/img/logos/cpp_logo.png" alt="C++ Logo">
           </div>
@@ -141,7 +197,7 @@
         </div>
       </a>
       <a style="text-decoration: none; color: inherit;" href="https://www.java.com/en/" target="_blank">
-        <div class="card">
+        <div class="tool-card">
             <div class="logo">
               <img src="assets/img/logos/java_logo.png" alt="Java Logo">
             </div>
@@ -150,7 +206,7 @@
           </div>
       </a>
       <a style="text-decoration: none; color: inherit;" href="https://www.python.org" target="_blank">
-        <div class="card">
+        <div class="tool-card">
             <div class="logo">
               <img src="assets/img/logos/python_logo.png" alt="Python Logo">
             </div>
@@ -158,8 +214,17 @@
             <p>Data analytics and automation, packed with power.</p>
           </div>
       </a>
+      <a style="text-decoration: none; color: inherit;" href="https://developer.apple.com/swift/" target="_blank">
+        <div class="tool-card">
+            <div class="logo">
+              <img src="assets/img/logos/swift_logo.png" alt="Node.js Logo">
+            </div>
+            <h1 style="text-decoration: none;">Swift</h1>
+            <p>A powerful language built for iOS, macOS, tvOS, and watchOS.</p>
+          </div>
+      </a>
       <a style="text-decoration: none; color: inherit;" href="https://nodejs.org/en/" target="_blank">
-        <div class="card">
+        <div class="tool-card">
             <div class="logo">
               <img src="assets/img/logos/node_logo.png" alt="Node.js Logo">
             </div>
@@ -168,7 +233,7 @@
           </div>
       </a>
       <a style="text-decoration: none; color: inherit;" href="https://www.php.net" target="_blank">
-        <div class="card">
+        <div class="tool-card">
             <div class="logo">
               <img src="assets/img/logos/php_logo.png" alt="PHP Logo">
             </div>
@@ -177,7 +242,7 @@
           </div>
       </a>
       <a style="text-decoration: none; color: inherit;" href="https://www.mysql.com" target="_blank">
-        <div class="card">
+        <div class="tool-card">
             <div class="logo">
               <img src="assets/img/logos/mysql_logo.png" alt="MySQL Logo">
             </div>
@@ -194,26 +259,34 @@
     <div style="overflow: auto;" class="bg-dark main-content ">
       <div class="d-flex justify-content-between p-5 text-white bg-dark" style="flex-direction: column; align-items: left;">
         
-        <h4 style="color: #1677e9;">.. and these tools</h4><br><br>
+        <h4 style="color: #1677e9;">...and these tools</h4><br><br>
         <div class="container">
-          <a style="text-decoration: none; color: inherit;" href="https://www.kernel.org" target="_blank">
-            <div class="card">
+          <a style="text-decoration: none; color: inherit;" href="https://www.aws.com" target="_blank">
+            <div class="tool-card">
                 <div class="logo">
-                  <img src="assets/img/logos/linux_logo.png" alt="Linux Logo">
+                  <img src="assets/img/logos/aws_logo.png" alt="AWS Logo">
                 </div>
-                <h1 style="text-decoration: none;">Linux</h1>
+                <h1 style="text-decoration: none;">AWS</h1>
               </div>
           </a>
           <a style="text-decoration: none; color: inherit;" href="https://github.com" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/github_logo.png" alt="GitHub Logo">
                 </div>
                 <h1 style="text-decoration: none;">Git/GitHub</h1>
               </div>
           </a>
+          <a style="text-decoration: none; color: inherit;" href="https://www.kernel.org" target="_blank">
+            <div class="tool-card">
+                <div class="logo">
+                  <img src="assets/img/logos/linux_logo.png" alt="Linux Logo">
+                </div>
+                <h1 style="text-decoration: none;">Linux</h1>
+              </div>
+          </a>
           <a style="text-decoration: none; color: inherit;" href="https://www.digitalocean.com" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/digitalocean_logo.png" alt="DigitalOcean Logo">
                 </div>
@@ -221,7 +294,7 @@
               </div>
           </a>
           <a style="text-decoration: none; color: inherit;" href="https://www.adobe.com/products/photoshop.html" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/photoshop_logo.png" alt="Photoshop Logo">
                 </div>
@@ -229,7 +302,7 @@
               </div>
           </a>
           <a style="text-decoration: none; color: inherit;" href="https://code.visualstudio.com" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/vscode_logo.png" alt="VSCode Logo">
                 </div>
@@ -237,7 +310,7 @@
               </div>
           </a>
           <a style="text-decoration: none; color: inherit;" href="https://developer.apple.com/xcode/" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/xcode_logo.png" alt="Xcode Logo">
                 </div>
@@ -245,7 +318,7 @@
               </div>
           </a>
           <a style="text-decoration: none; color: inherit;" href="https://www.jetbrains.com" target="_blank">
-            <div class="card">
+            <div class="tool-card">
                 <div class="logo">
                   <img src="assets/img/logos/jetbrains_logo.png" alt="JetBrains Logo">
                 </div>
@@ -260,7 +333,7 @@
   <!-- Skills -->
   
   <!-- Hero -->
-  <div class="d-flex justify-content-between p-5 text-white" style="background-color: rgb(37, 46, 57); flex-direction: column; align-items: left;">
+  <!-- <div class="d-flex justify-content-between p-5 text-white" style="background-color: rgb(37, 46, 57); flex-direction: column; align-items: left;">
     <h1 style="text-align: left; color: #1677e9">Other skills</h1>
     <ul>
       <li>Leadership</li>
@@ -271,13 +344,14 @@
       <li>Communication</li>
       <li>Adaptability</li>
     </ul>
-  </div>
+  </div> -->
   <!-- Hero -->
 
 
 
 <!-- portfolio stuff here-->
   <!-- Contact/Resume -->
+  <hr style="border-top: 3px solid #bbb;">
   <div style="padding-bottom: 5rem;" class="bg-dark">
   <footer class="bg-dark text-center text-white al" style="bottom: 0; width: 100%; height: 5rem;">
 
@@ -306,4 +380,5 @@
 </div>
     <!-- Contact/Resume-->
 </body>
+
 </html>
