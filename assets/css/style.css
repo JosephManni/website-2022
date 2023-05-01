@@ -167,3 +167,8 @@ a {
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px); opacity: 0; }
 }
+
+.card-body {
+  height: 22rem; /* set the desired height here /
+  overflow: auto; / add scrollbars if the content is too long */
+  }
